@@ -5,7 +5,7 @@ export function Hero() {
   return (
     <section
       id="hero"
-      className="relative min-h-screen min-h-[100dvh] flex flex-col bg-navy text-white overflow-hidden isolate bg-[url('/images/hero-banner.png?v=2')] bg-cover bg-no-repeat bg-right md:bg-center"
+      className="relative min-h-screen min-h-[100dvh] flex flex-col bg-navy text-white overflow-hidden isolate bg-[url('/images/hero-banner.png?v=2')] bg-no-repeat [background-size:auto_35%] [background-position:right_top] md:bg-cover md:bg-center"
     >
       <div
         aria-hidden="true"
@@ -16,7 +16,7 @@ export function Hero() {
 
       <Marquee text="Only 3 spots left this month — book your free strategy call today." />
 
-      <div className="container-content relative flex-1 flex items-end md:items-center pb-10 pt-10 md:py-16">
+      <div className="container-content relative flex-1 flex items-start md:items-center pt-[28vh] pb-10 md:py-16">
         <div className="max-w-3xl w-full">
           <h1 className="heading-xl hero-stagger">
             <span>Every day in the U.S.,</span>{" "}
