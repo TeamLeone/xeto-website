@@ -150,7 +150,7 @@ body {
 
 @media (min-width: 768px) {
   .hero-stagger > * {
-    display: block;
+    display: block !important;
   }
 }
 
