@@ -5,16 +5,16 @@ export function Hero() {
   return (
     <section
       id="hero"
-      className="relative flex flex-col bg-navy text-white overflow-hidden isolate lg:min-h-screen lg:min-h-[100dvh] lg:bg-[url('/images/hero-banner.png?v=2')] lg:bg-cover lg:bg-no-repeat lg:bg-center"
+      className="relative flex flex-col bg-navy text-white overflow-hidden isolate md:min-h-screen md:min-h-[100dvh] md:bg-[url('/images/hero-banner.png?v=2')] md:bg-cover md:bg-no-repeat md:bg-center"
     >
       <div
         aria-hidden="true"
-        className="absolute inset-0 -z-10 hidden bg-navy/[0.55] lg:block"
+        className="absolute inset-0 -z-10 hidden bg-navy/[0.55] md:block"
       />
 
       <div
         aria-hidden="true"
-        className="pointer-events-none absolute inset-x-0 -z-10 top-[clamp(100px,14vh,140px)] h-[clamp(200px,40vh,360px)] lg:hidden"
+        className="pointer-events-none absolute inset-x-0 -z-10 top-[14vh] h-[40vh] md:hidden"
         style={{
           backgroundImage: "url('/images/hero-banner.png?v=2')",
           backgroundSize: "auto 121%",
@@ -31,7 +31,7 @@ export function Hero() {
 
       <Marquee text="Only 3 spots left this month — book your free strategy call today." />
 
-      <div className="container-content relative flex-1 flex items-start lg:items-center pt-[clamp(220px,44vh,410px)] pb-10 lg:pt-16 lg:pb-16">
+      <div className="container-content relative flex-1 flex items-start md:items-center pt-[42vh] pb-10 md:pt-16 md:pb-16">
         <div className="max-w-3xl w-full">
           <h1 className="heading-xl hero-stagger">
             <span>Every day in the U.S.,</span>{" "}
