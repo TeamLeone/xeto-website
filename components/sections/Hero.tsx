@@ -21,9 +21,9 @@ export function Hero() {
           backgroundPosition: "75% center",
           backgroundRepeat: "no-repeat",
           maskImage:
-            "linear-gradient(to bottom, black 75%, transparent 100%)",
+            "linear-gradient(to bottom, transparent 0%, black 25%, black 75%, transparent 100%)",
           WebkitMaskImage:
-            "linear-gradient(to bottom, black 75%, transparent 100%)",
+            "linear-gradient(to bottom, transparent 0%, black 25%, black 75%, transparent 100%)",
         }}
       />
 
