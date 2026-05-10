@@ -197,7 +197,7 @@ body {
   );
 }
 
-@media (min-width: 768px) {
+@media (min-width: 769px) {
   .hero-banner-fade {
     -webkit-mask-image:
       linear-gradient(
@@ -207,13 +207,7 @@ body {
         black 75%,
         transparent 100%
       ),
-      linear-gradient(
-        to right,
-        transparent 0%,
-        black 15%,
-        black 78%,
-        transparent 100%
-      );
+      linear-gradient(to right, transparent 0%, black 15%);
     mask-image:
       linear-gradient(
         to bottom,
@@ -222,13 +216,7 @@ body {
         black 75%,
         transparent 100%
       ),
-      linear-gradient(
-        to right,
-        transparent 0%,
-        black 15%,
-        black 78%,
-        transparent 100%
-      );
+      linear-gradient(to right, transparent 0%, black 15%);
     -webkit-mask-composite: source-in;
     mask-composite: intersect;
   }

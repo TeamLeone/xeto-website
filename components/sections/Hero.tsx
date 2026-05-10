@@ -12,11 +12,19 @@ export function Hero() {
         className="hero-banner-fade pointer-events-none absolute inset-x-0 -z-10 top-[14vh] h-[40vh] md:top-[28vh] md:h-[50vh] bg-no-repeat bg-[url('/images/hero-banner.png?v=2')] [background-size:auto_121%] md:[background-size:auto_150%] [background-position:78%_center] md:[background-position:25%_25%]"
       />
 
+      <div
+        aria-hidden="true"
+        className="pointer-events-none absolute inset-y-0 right-0 w-1/4 z-[1] hidden min-[769px]:block"
+        style={{
+          background: "linear-gradient(to right, transparent, #0F1B3D)",
+        }}
+      />
+
       <div className="h-16 sm:h-20 flex-shrink-0" aria-hidden="true" />
 
       <Marquee text="only 3 spots available per month -  book your free strategy call today." />
 
-      <div className="container-content relative flex-1 flex items-start pt-[42vh] pb-10 md:pt-[66vh] md:pb-20">
+      <div className="container-content relative z-[2] flex-1 flex items-start pt-[42vh] pb-10 md:pt-[66vh] md:pb-20">
         <div className="max-w-3xl w-full">
           <h1 className="heading-xl hero-stagger">
             <span>Every day in the U.S.,</span>{" "}
