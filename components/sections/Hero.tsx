@@ -14,16 +14,28 @@ export function Hero() {
         fill
         priority
         sizes="100vw"
-        className="absolute inset-0 -z-20 object-cover object-right md:object-center"
+        className="absolute inset-0 -z-20 hidden object-cover object-center md:block"
       />
       <div
         aria-hidden="true"
-        className="absolute inset-0 -z-10 bg-navy/[0.55]"
+        className="absolute inset-0 -z-10 hidden bg-navy/[0.55] md:block"
       />
 
       <div className="h-16 sm:h-20 flex-shrink-0" aria-hidden="true" />
 
       <Marquee text="Only 3 spots left this month — book your free strategy call today." />
+
+      <div className="relative w-full md:hidden">
+        <Image
+          src="/images/hero-banner.png?v=2"
+          alt="Xeto — Small Business Consulting"
+          width={1942}
+          height={809}
+          priority
+          sizes="100vw"
+          className="h-auto w-full"
+        />
+      </div>
 
       <div className="container-content relative flex-1 flex items-center py-10 sm:py-16">
         <div className="max-w-3xl w-full">
