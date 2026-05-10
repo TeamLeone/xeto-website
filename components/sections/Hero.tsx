@@ -5,21 +5,12 @@ export function Hero() {
   return (
     <section
       id="hero"
-      className="relative flex flex-col bg-navy text-white overflow-hidden isolate md:min-h-screen md:min-h-[100dvh] md:bg-[url('/images/hero-banner.png?v=2')] md:bg-cover md:bg-no-repeat md:bg-center"
+      className="relative flex flex-col bg-navy text-white overflow-hidden isolate"
     >
       <div
         aria-hidden="true"
-        className="absolute inset-0 -z-10 hidden bg-navy/[0.55] md:block"
-      />
-
-      <div
-        aria-hidden="true"
-        className="pointer-events-none absolute inset-x-0 -z-10 top-[14vh] h-[40vh] md:hidden"
+        className="pointer-events-none absolute inset-x-0 -z-10 top-[14vh] h-[40vh] md:h-[50vh] bg-no-repeat bg-[url('/images/hero-banner.png?v=2')] [background-size:auto_121%] md:[background-size:cover] [background-position:78%_center] md:[background-position:center]"
         style={{
-          backgroundImage: "url('/images/hero-banner.png?v=2')",
-          backgroundSize: "auto 121%",
-          backgroundPosition: "78% center",
-          backgroundRepeat: "no-repeat",
           maskImage:
             "linear-gradient(to bottom, transparent 0%, black 25%, black 75%, transparent 100%)",
           WebkitMaskImage:
@@ -31,7 +22,7 @@ export function Hero() {
 
       <Marquee text="only 3 spots available per month - book your free strategy call today." />
 
-      <div className="container-content relative flex-1 flex items-start md:items-center pt-[42vh] pb-10 md:pt-16 md:pb-16">
+      <div className="container-content relative flex-1 flex items-start pt-[42vh] pb-10 md:pt-[52vh] md:pb-20">
         <div className="max-w-3xl w-full">
           <h1 className="heading-xl hero-stagger">
             <span>Every day in the U.S.,</span>{" "}
