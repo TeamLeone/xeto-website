@@ -1,9 +1,9 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
-import { Logo } from "./Logo";
 
 const navLinks = [
   { href: "/#how-it-works", label: "How it works" },
@@ -47,8 +47,16 @@ export function Nav() {
           href="/"
           aria-label="Xeto home"
           onClick={() => setMobileOpen(false)}
+          className="inline-flex items-center"
         >
-          <Logo variant="light" />
+          <Image
+            src="/images/nav-button.png"
+            alt="Xeto"
+            width={1254}
+            height={1254}
+            priority
+            className="h-12 w-12 sm:h-14 sm:w-14 object-contain"
+          />
         </Link>
 
         <nav className="hidden lg:flex items-center gap-8" aria-label="Primary">

@@ -29,7 +29,7 @@ export function Hero() {
 
       <div className="h-16 sm:h-20 flex-shrink-0" aria-hidden="true" />
 
-      <Marquee text="Only 3 spots left this month — book your free strategy call today." />
+      <Marquee text="only 3 spots available per month - book your free strategy call today." />
 
       <div className="container-content relative flex-1 flex items-start md:items-center pt-[42vh] pb-10 md:pt-16 md:pb-16">
         <div className="max-w-3xl w-full">
@@ -38,7 +38,7 @@ export function Hero() {
             <span>
               over{" "}
               <span className="text-orange">
-                <CountUp end={600} /> small businesses
+                <CountUp end={600} duration={2800} /> small businesses
               </span>
             </span>{" "}
             <span>crash before their first year.</span>
