@@ -26,12 +26,14 @@ export function Hero() {
         <div className="max-w-3xl w-full">
           <h1 className="heading-xl hero-stagger">
             <span>Every day in the U.S.,</span>{" "}
+            <br />
             <span>
               over{" "}
               <span className="text-orange">
                 <CountUp end={600} duration={2800} /> small businesses
               </span>
             </span>{" "}
+            <br />
             <span>crash before their first year.</span>
           </h1>
           <p
