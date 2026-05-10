@@ -20,7 +20,7 @@ export function Hero() {
 
       <div className="h-16 sm:h-20 flex-shrink-0" aria-hidden="true" />
 
-      <Marquee text="only 3 spots available per month - book your free strategy call today." />
+      <Marquee text="only 3 spots available per month -  book your free strategy call today." />
 
       <div className="container-content relative flex-1 flex items-start pt-[42vh] pb-10 md:pt-[52vh] md:pb-20">
         <div className="max-w-3xl w-full">
