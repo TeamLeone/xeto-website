@@ -46,7 +46,13 @@ export function Nav() {
         <Link
           href="/"
           aria-label="Xeto home"
-          onClick={() => setMobileOpen(false)}
+          onClick={(e) => {
+            setMobileOpen(false);
+            if (pathname === "/") {
+              e.preventDefault();
+              window.scrollTo({ top: 0, behavior: "smooth" });
+            }
+          }}
           className="inline-flex items-center"
         >
           <Image

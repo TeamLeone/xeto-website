@@ -1,5 +1,8 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 const socials = [
   {
@@ -20,11 +23,22 @@ const socials = [
 ];
 
 export function Footer() {
+  const pathname = usePathname();
   return (
     <footer className="bg-navy text-white">
       <div className="container-content py-12 sm:py-16">
         <div className="flex flex-col items-start gap-8 sm:gap-10">
-          <Link href="/" aria-label="Xeto home" className="inline-flex">
+          <Link
+            href="/"
+            aria-label="Xeto home"
+            onClick={(e) => {
+              if (pathname === "/") {
+                e.preventDefault();
+                window.scrollTo({ top: 0, behavior: "smooth" });
+              }
+            }}
+            className="inline-flex"
+          >
             <Image
               src="/images/nav-button.png"
               alt="Xeto"
