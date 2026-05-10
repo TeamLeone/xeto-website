@@ -17,8 +17,8 @@ export function Hero() {
         className="pointer-events-none absolute inset-x-0 -z-10 top-[14vh] h-[40vh] md:hidden"
         style={{
           backgroundImage: "url('/images/hero-banner.png?v=2')",
-          backgroundSize: "auto 119%",
-          backgroundPosition: "80% center",
+          backgroundSize: "auto 121%",
+          backgroundPosition: "78% center",
           backgroundRepeat: "no-repeat",
           maskImage:
             "linear-gradient(to bottom, transparent 0%, black 25%, black 75%, transparent 100%)",
