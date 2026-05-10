@@ -202,8 +202,7 @@ body {
     -webkit-mask-image:
       linear-gradient(
         to bottom,
-        transparent 0%,
-        black 25%,
+        black 0%,
         black 75%,
         transparent 100%
       ),
@@ -217,8 +216,7 @@ body {
     mask-image:
       linear-gradient(
         to bottom,
-        transparent 0%,
-        black 25%,
+        black 0%,
         black 75%,
         transparent 100%
       ),

@@ -9,7 +9,7 @@ export function Hero() {
     >
       <div
         aria-hidden="true"
-        className="hero-banner-fade pointer-events-none absolute inset-x-0 -z-10 top-[14vh] h-[40vh] md:top-[28vh] md:h-[50vh] bg-no-repeat bg-[url('/images/hero-banner.png?v=2')] [background-size:auto_121%] md:[background-size:auto_125%] [background-position:78%_center] md:[background-position:25%_center]"
+        className="hero-banner-fade pointer-events-none absolute inset-x-0 -z-10 top-[14vh] h-[40vh] md:top-[28vh] md:h-[50vh] bg-no-repeat bg-[url('/images/hero-banner.png?v=2')] [background-size:auto_121%] md:[background-size:auto_150%] [background-position:78%_center] md:[background-position:25%_25%]"
       />
 
       <div className="h-16 sm:h-20 flex-shrink-0" aria-hidden="true" />
