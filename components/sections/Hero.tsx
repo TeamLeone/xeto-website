@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { CountUp } from "../CountUp";
 import { Marquee } from "../Marquee";
 
@@ -6,38 +5,18 @@ export function Hero() {
   return (
     <section
       id="hero"
-      className="relative min-h-screen min-h-[100dvh] flex flex-col bg-navy text-white overflow-hidden isolate"
+      className="relative min-h-screen min-h-[100dvh] flex flex-col bg-navy text-white overflow-hidden isolate bg-[url('/images/hero-banner.png?v=2')] bg-cover bg-no-repeat bg-right md:bg-center"
     >
-      <Image
-        src="/images/hero-banner.png?v=2"
-        alt=""
-        fill
-        priority
-        sizes="100vw"
-        className="absolute inset-0 -z-20 hidden object-cover object-center md:block"
-      />
       <div
         aria-hidden="true"
-        className="absolute inset-0 -z-10 hidden bg-navy/[0.55] md:block"
+        className="absolute inset-0 -z-10 bg-navy/[0.55]"
       />
 
       <div className="h-16 sm:h-20 flex-shrink-0" aria-hidden="true" />
 
       <Marquee text="Only 3 spots left this month — book your free strategy call today." />
 
-      <div className="relative w-full md:hidden">
-        <Image
-          src="/images/hero-banner.png?v=2"
-          alt="Xeto — Small Business Consulting"
-          width={1942}
-          height={809}
-          priority
-          sizes="100vw"
-          className="h-auto w-full"
-        />
-      </div>
-
-      <div className="container-content relative flex-1 flex items-center py-10 sm:py-16">
+      <div className="container-content relative flex-1 flex items-end md:items-center pb-10 pt-10 md:py-16">
         <div className="max-w-3xl w-full">
           <h1 className="heading-xl hero-stagger">
             <span>Every day in the U.S.,</span>{" "}
