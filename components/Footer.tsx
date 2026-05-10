@@ -24,13 +24,15 @@ export function Footer() {
     <footer className="bg-navy text-white">
       <div className="container-content py-12 sm:py-16">
         <div className="flex flex-col items-start gap-8 sm:gap-10">
-          <Image
-            src="/images/nav-button.png"
-            alt="Xeto"
-            width={1254}
-            height={1254}
-            className="h-14 w-14 sm:h-16 sm:w-16 object-contain"
-          />
+          <Link href="/" aria-label="Xeto home" className="inline-flex">
+            <Image
+              src="/images/nav-button.png"
+              alt="Xeto"
+              width={1254}
+              height={1254}
+              className="h-14 w-14 sm:h-16 sm:w-16 object-contain"
+            />
+          </Link>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 w-full">
             <div className="flex flex-col gap-2">
