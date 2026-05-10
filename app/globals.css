@@ -202,7 +202,8 @@ body {
     -webkit-mask-image:
       linear-gradient(
         to bottom,
-        black 0%,
+        transparent 0%,
+        black 8%,
         black 75%,
         transparent 100%
       ),
@@ -210,13 +211,14 @@ body {
         to right,
         transparent 0%,
         black 15%,
-        black 85%,
+        black 78%,
         transparent 100%
       );
     mask-image:
       linear-gradient(
         to bottom,
-        black 0%,
+        transparent 0%,
+        black 8%,
         black 75%,
         transparent 100%
       ),
@@ -224,7 +226,7 @@ body {
         to right,
         transparent 0%,
         black 15%,
-        black 85%,
+        black 78%,
         transparent 100%
       );
     -webkit-mask-composite: source-in;
