@@ -1,0 +1,181 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+@layer components {
+  .btn-primary {
+    @apply inline-flex items-center justify-center bg-orange text-white font-bold rounded-full px-7 py-4 text-base transition-all duration-200 hover:bg-orange-hover active:scale-[0.98] shadow-lg shadow-orange/30 min-h-[48px];
+  }
+
+  .btn-primary-compact {
+    @apply inline-flex items-center justify-center bg-orange text-white font-bold rounded-full px-5 py-3 text-sm transition-all duration-200 hover:bg-orange-hover active:scale-[0.98] shadow-md shadow-orange/30 min-h-[44px];
+  }
+
+  .container-content {
+    @apply mx-auto w-full max-w-content px-5 sm:px-6 lg:px-8;
+  }
+
+  .section-padding {
+    @apply py-16 sm:py-20 lg:py-28;
+  }
+
+  .heading-xl {
+    @apply font-black leading-[1.05] tracking-tight;
+    font-size: clamp(2rem, 5.5vw, 4rem);
+  }
+
+  .heading-lg {
+    @apply text-[clamp(1.75rem,5vw,3rem)] font-black leading-[1.1] tracking-tight;
+  }
+
+  .heading-md {
+    @apply text-[clamp(1.25rem,3vw,1.75rem)] font-bold leading-tight;
+  }
+
+  .body-lg {
+    @apply text-base sm:text-lg leading-relaxed font-normal;
+  }
+
+  .section-label {
+    @apply inline-block text-orange font-mono text-[0.7rem] sm:text-xs font-bold tracking-[0.25em] uppercase mb-4;
+  }
+
+  .stat-massive {
+    @apply text-orange font-black leading-none tracking-tight;
+    font-size: clamp(4rem, 12vw, 7rem);
+  }
+
+  .legal-content {
+    @apply text-navy/80 text-base sm:text-lg leading-relaxed;
+  }
+
+  .legal-content h2 {
+    @apply text-xl sm:text-2xl font-bold text-navy mt-10 mb-3 leading-tight;
+  }
+
+  .legal-content p {
+    @apply mt-4;
+  }
+
+  .legal-content ul {
+    @apply mt-4 space-y-2 list-disc pl-6;
+  }
+
+  .legal-content a {
+    @apply text-orange underline underline-offset-2 hover:text-orange-hover;
+  }
+
+  .legal-content strong {
+    @apply text-navy font-semibold;
+  }
+}
+
+@layer utilities {
+  .stars-bg {
+    position: relative;
+    isolation: isolate;
+  }
+
+  .stars-bg::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    pointer-events: none;
+    background-image:
+      radial-gradient(1px 1px at 25px 35px, rgba(255, 255, 255, 0.55) 50%, transparent 50%),
+      radial-gradient(1px 1px at 90px 110px, rgba(255, 255, 255, 0.35) 50%, transparent 50%),
+      radial-gradient(1.5px 1.5px at 145px 50px, rgba(255, 255, 255, 0.45) 50%, transparent 50%),
+      radial-gradient(1px 1px at 180px 145px, rgba(255, 255, 255, 0.3) 50%, transparent 50%),
+      radial-gradient(1px 1px at 60px 175px, rgba(255, 255, 255, 0.4) 50%, transparent 50%);
+    background-size: 220px 220px;
+    background-repeat: repeat;
+    opacity: 0.7;
+  }
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-marquee {
+  animation: marquee 30s linear infinite;
+}
+
+@keyframes heroStagger {
+  from {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.hero-stagger > * {
+  display: inline-block;
+  opacity: 0;
+  animation: heroStagger 380ms cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.hero-stagger > *:nth-child(1) {
+  animation-delay: 0ms;
+}
+.hero-stagger > *:nth-child(2) {
+  animation-delay: 100ms;
+}
+.hero-stagger > *:nth-child(3) {
+  animation-delay: 200ms;
+}
+.hero-stagger > *:nth-child(4) {
+  animation-delay: 300ms;
+}
+.hero-stagger > *:nth-child(5) {
+  animation-delay: 400ms;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(14px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in-up {
+  animation: fadeInUp 380ms ease-out forwards;
+  opacity: 0;
+}
