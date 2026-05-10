@@ -69,11 +69,6 @@ export function WhyXeto() {
                     : "border-navy/10 bg-navy/[0.02]"
                 }`}
               >
-                {col.accent ? (
-                  <span className="absolute -top-3 left-5 inline-flex items-center bg-orange text-white text-[0.65rem] font-bold tracking-[0.2em] uppercase rounded-full px-3 py-1 shadow-md">
-                    Recommended
-                  </span>
-                ) : null}
                 <h3
                   className={`text-2xl font-black ${
                     col.accent ? "text-orange" : "text-navy"
