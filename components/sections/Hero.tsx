@@ -18,7 +18,7 @@ export function Hero() {
         style={{
           backgroundImage: "url('/images/hero-banner.png?v=2')",
           backgroundSize: "auto 100%",
-          backgroundPosition: "75% center",
+          backgroundPosition: "80% center",
           backgroundRepeat: "no-repeat",
           maskImage:
             "linear-gradient(to bottom, transparent 0%, black 25%, black 75%, transparent 100%)",
