@@ -11,7 +11,7 @@ export function Marquee({ text, className = "" }: MarqueeProps) {
       className={`overflow-hidden border-y border-orange/30 bg-navy/40 backdrop-blur-sm ${className}`}
       aria-hidden="true"
     >
-      <div className="flex w-max animate-marquee md:[animation-duration:75s] whitespace-nowrap py-2.5">
+      <div className="flex w-max animate-marquee [animation-duration:50s] md:[animation-duration:75s] whitespace-nowrap py-2.5">
         {items.map((i) => (
           <span
             key={`a-${i}`}

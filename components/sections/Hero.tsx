@@ -9,7 +9,7 @@ export function Hero() {
     >
       <div
         aria-hidden="true"
-        className="pointer-events-none absolute inset-x-0 -z-10 top-[14vh] h-[40vh] md:h-[50vh] bg-no-repeat bg-[url('/images/hero-banner.png?v=2')] [background-size:auto_121%] md:[background-size:cover] [background-position:78%_center] md:[background-position:center]"
+        className="pointer-events-none absolute inset-x-0 -z-10 top-[14vh] h-[40vh] md:top-[18vh] md:h-[50vh] bg-no-repeat bg-[url('/images/hero-banner.png?v=2')] [background-size:auto_121%] md:[background-size:auto_100%] [background-position:78%_center] md:[background-position:25%_center]"
         style={{
           maskImage:
             "linear-gradient(to bottom, transparent 0%, black 25%, black 75%, transparent 100%)",
@@ -22,18 +22,16 @@ export function Hero() {
 
       <Marquee text="only 3 spots available per month -  book your free strategy call today." />
 
-      <div className="container-content relative flex-1 flex items-start pt-[42vh] pb-10 md:pt-[52vh] md:pb-20">
+      <div className="container-content relative flex-1 flex items-start pt-[42vh] pb-10 md:pt-[56vh] md:pb-20">
         <div className="max-w-3xl w-full">
           <h1 className="heading-xl hero-stagger">
             <span>Every day in the U.S.,</span>{" "}
-            <br />
             <span>
               over{" "}
               <span className="text-orange">
                 <CountUp end={600} duration={2800} /> small businesses
               </span>
             </span>{" "}
-            <br />
             <span>crash before their first year.</span>
           </h1>
           <p
